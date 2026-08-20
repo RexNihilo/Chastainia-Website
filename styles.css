@@ -25,7 +25,8 @@ h3 { font-size: 1.2rem; }
 .site-header { position: fixed; z-index: 20; top: 0; left: 0; right: 0; display: flex; align-items: center; justify-content: space-between; gap: 22px; padding: 18px clamp(20px, 5vw, 72px); color: #fff; background: rgba(10, 18, 31, 0.78); backdrop-filter: blur(14px); border-bottom: 1px solid rgba(255,255,255,0.16); }
 .inner-header { background: rgba(16, 24, 39, 0.96); }
 .brand { display: inline-flex; align-items: center; gap: 10px; font-weight: 850; line-height: 1.05; max-width: 360px; }
-.brand-mark { display: grid; place-items: center; width: 36px; height: 36px; border: 1px solid rgba(255,255,255,0.42); background: rgba(255,255,255,0.14); font-size: .82rem; }
+.brand-mark { display: grid; place-items: center; width: 48px; height: 48px; flex: 0 0 auto; overflow: hidden; border: 1px solid rgba(255,255,255,0.72); background: #ffffff; box-shadow: 0 8px 20px rgba(0,0,0,0.18); }
+.brand-mark img { width: 100%; height: 100%; object-fit: contain; padding: 6px; }
 .nav-links { display: flex; align-items: center; gap: 22px; color: rgba(255,255,255,0.84); font-size: .92rem; font-weight: 700; }
 .nav-links a:hover, .nav-links a.active, .nav-cta:hover { color: #fff; }
 .nav-cta { color: #fff; font-weight: 800; border-bottom: 1px solid rgba(255,255,255,.72); white-space: nowrap; }
@@ -73,7 +74,7 @@ h3 { font-size: 1.2rem; }
 .service-stack { display: grid; gap: 16px; }
 .detail-card { display: grid; grid-template-columns: 70px 1fr; gap: 18px; padding: 28px; }
 .detail-card h2 { font-size: clamp(1.45rem, 2.4vw, 2.3rem); }
-.timeline { display: grid; grid-template-columns: repeat(3, minmax(0,1fr)); border-top: 1px solid var(--line); }
+.timeline { display: grid; grid-template-columns: repeat(3, minmax(0,1fr)); border-top: 1px solid rgba(255,255,255,.1); }
 .timeline.five { grid-template-columns: repeat(5, minmax(0,1fr)); }
 .timeline article { padding: 28px 24px 8px 0; border-right: 1px solid var(--line); }
 .timeline article:last-child { border-right: 0; }
@@ -101,11 +102,17 @@ h3 { font-size: 1.2rem; }
 .final-cta { display: flex; justify-content: space-between; gap: 24px; align-items: center; color: #fff; background: var(--navy); }
 .final-cta div { max-width: 820px; }
 .final-cta p { color: rgba(255,255,255,.74); }
-.site-footer { display: grid; grid-template-columns: 1.4fr auto auto; gap: 24px; align-items: center; padding: 26px clamp(20px, 5vw, 72px); color: var(--muted); border-top: 1px solid var(--line); }
+.site-footer { display: grid; grid-template-columns: 1.4fr auto auto; gap: 24px; align-items: center; padding: 26px clamp(20px, 5vw, 72px); color: var(--muted); border-top: 1px solid rgba(255,255,255,.1); }
 .site-footer div { display: grid; gap: 4px; }
 .site-footer strong { color: var(--ink); }
 .site-footer nav { display: flex; gap: 18px; font-weight: 750; }
 @media (max-width: 1120px) { .five-cards, .timeline.five { grid-template-columns: repeat(2, minmax(0,1fr)); } .brand { max-width: 280px; } }
 @media (max-width: 900px) { .site-header { position: absolute; align-items: center; } .menu-toggle { display: block; margin-left: auto; } .nav-cta { display: none; } .nav-links { position: absolute; top: 100%; left: 0; right: 0; display: none; flex-direction: column; align-items: stretch; gap: 0; padding: 10px 20px 22px; background: rgba(16,24,39,.98); border-bottom: 1px solid rgba(255,255,255,.16); } .nav-links.open { display: flex; } .nav-links a { padding: 12px 0; border-top: 1px solid rgba(255,255,255,.1); } .hero { min-height: 92vh; padding-top: 112px; } .hero-overlay { background: rgba(4,12,24,.76); } .proof-band, .split, .card-grid.three, .card-grid.two, .five-cards, .timeline, .timeline.five, .featured-case, .contact-layout { grid-template-columns: 1fr; } .sticky-heading { position: static; } .timeline article { border-right: 0; border-bottom: 1px solid var(--line); } .with-action, .final-cta, .site-footer { display: flex; flex-direction: column; align-items: flex-start; } }
 @media (max-width: 560px) { h1 { font-size: 3rem; } .page-hero h1 { font-size: 2.7rem; } .hero-copy, .page-hero p { font-size: 1rem; } .button { width: 100%; } .section, .final-cta { padding-top: 62px; padding-bottom: 62px; } .detail-card { grid-template-columns: 1fr; } }
+
+
+
+
+
+
 
