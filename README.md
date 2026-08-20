@@ -35,6 +35,18 @@ http://localhost:5173
 
 The contact form currently uses `mailto:carey@chastainia.com` so it does not pretend to submit to a backend service. Before production, replace the form `action` with a real form endpoint or connect it to the server-side handler used by your hosting environment.
 
+## Cloudflare Pages
+
+This repository needs no build command. For a Git-connected Cloudflare Pages project, use:
+
+- Production branch: `main` (or the repository's actual default branch)
+- Framework preset: `None`
+- Build command: `exit 0`
+- Build output directory: `.`
+- Root directory: leave blank (repository root)
+
+After the first `*.pages.dev` deployment works, add `chastainia.com` and `www.chastainia.com` under the Pages project's Custom domains settings.
+
 ## Nginx Container Build
 
 ```powershell
